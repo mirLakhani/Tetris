@@ -165,6 +165,8 @@ public class Board extends JPanel {
             int x = curX + curPiece.x(i);
             int y = curY - curPiece.y(i);
             board[(y * BOARD_WIDTH) + x] = curPiece.getShape();
+
+		System.out.println(i); //Commited changes here by Miral Lakhani
         }
 
         removeFullLines();
